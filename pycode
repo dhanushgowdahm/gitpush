@@ -1,0 +1,30 @@
+a= []
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+    var= int(input())
+    a.append(var) 
+
+print(a)
+
+b=[]
+n1 = int(input("Enter number of elements of another list : "))
+for i in range(0, n1):
+    var1= int(input())
+    b.append(var1) 
+
+print(b)
+
+
+for x in range(1,len(a),2):
+   
+   c=a[x]
+   a[x]=b[x]
+   b[x]=c
+   #print(a[x])
+   #print(b[x])
+   
+
+
+
+print(a)
+print(b)
