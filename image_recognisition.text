@@ -1,0 +1,13 @@
+import pytesseract
+from PIL import Image
+
+pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'  
+
+
+image = Image.open('/home/dhanushgowda/Music/vs/id.jpeg')
+
+
+text = pytesseract.image_to_string(image)
+
+# Print the recognized text
+print(text)
